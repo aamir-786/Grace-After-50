@@ -17,10 +17,37 @@ body {
     background-color: #fefefe;
 }
 
+/* Fix horizontal overflow on mobile */
+html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Make sure all containers and grids don't overflow */
+.container,
+.section-grid,
+.blog-grid,
+.video-grid,
+.wellness-grid,
+.guides-grid,
+.qa-grid,
+.news-grid,
+.values-grid,
+.quotes-grid,
+.resources-grid,
+.spotlight-grid,
+.schedule-grid,
+.faq-grid,
+.social-grid {
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 /* Typography */
@@ -2386,6 +2413,14 @@ p {
     text-decoration: none;
 }
 
+/* Prevent large fixed-position nav or hero from overflowing */
+.header,
+.hero,
+.page-hero {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
     .community-hero {
@@ -2650,3 +2685,4 @@ p {
         border: 1px solid #ddd;
     }
 }
+
