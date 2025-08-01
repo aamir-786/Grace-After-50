@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Grace - Grace After 50</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">Grace After 50</h1>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="grace-tv.html" class="nav-link">Grace TV</a></li>
+                    <li><a href="wellness.html" class="nav-link">Wellness</a></li>
+                    <li><a href="ai-tech.html" class="nav-link">AI & Tech</a></li>
+                    <li><a href="ask-grace.html" class="nav-link active">Ask Grace</a></li>
+                    <li><a href="trending.html" class="nav-link">Trending</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+    <a href="https://facebook.com/yourgroup" class="btn btn-outline" target="_blank" rel="noopener" aria-label="Join Facebook Community">Join Community</a>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Ask Grace</h1>
+            <p class="page-subtitle">Get thoughtful advice from someone who understands your journey</p>
+        </div>
+    </section>
+
+    <!-- Question Form -->
+    <section class="question-form-section">
+        <div class="container">
+            <div class="form-intro">
+                <h2>Have a Question? I'm Here to Help</h2>
+                <p>Whether you're navigating a career change, dealing with relationship challenges, wondering about health concerns, or simply need someone to talk through a situation, I'm here to listen and offer thoughtful guidance based on experience and understanding.</p>
+                <div class="privacy-note">
+                    <p><strong>Complete Privacy:</strong> Your questions are handled with absolute confidentiality. Share your name if you'd like, or submit anonymously—whatever feels comfortable for you.</p>
+                </div>
+            </div>
+
+            <form class="ask-grace-form" id="askGraceForm">
+                <div class="form-group">
+                    <label for="name">Your Name (Optional)</label>
+                    <input type="text" id="name" name="name" placeholder="Leave blank for anonymous submission">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email" placeholder="Only if you'd like a personal response">
+                    <small class="form-note">We'll never share your email or add you to lists without permission.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Question Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="relationships">Relationships & Family</option>
+                        <option value="career">Career & Money</option>
+                        <option value="health">Health & Wellness</option>
+                        <option value="lifestyle">Lifestyle & Personal Growth</option>
+                        <option value="technology">Technology & Learning</option>
+                        <option value="general">General Life Advice</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="question">Your Question</label>
+                    <textarea id="question" name="question" rows="8" placeholder="Share what's on your mind. The more context you provide, the better I can help you..." required></textarea>
+                    <div class="character-count">
+                        <span id="charCount">0</span>/2000 characters
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="featured" name="featured">
+                        <span class="checkmark"></span>
+                        I'm okay with my question (anonymously) being featured in a blog post or video response
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Submit Your Question</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Recent Q&A -->
+    <section class="recent-qa">
+        <div class="container">
+            <h2 class="section-title">Recent Questions & Answers</h2>
+            <div class="qa-grid">
+                <div class="qa-card fade-in">
+                    <div class="question-category">Relationships & Family</div>
+                    <h3>Q: How do I handle my adult children treating me like I'm incapable?</h3>
+                    <p class="question-preview">"Ever since I turned 60, my kids seem to think I can't handle technology, make decisions, or live independently. They mean well, but it's frustrating..."</p>
+                    <div class="grace-response">
+                        <h4>Grace's Response:</h4>
+                        <p>This is such a common experience, and your frustration is completely valid. Your children's behavior often comes from love and concern, but that doesn't make it less patronizing...</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Read Full Response</a>
+                </div>
+
+                <div class="qa-card fade-in">
+                    <div class="question-category">Career & Money</div>
+                    <h3>Q: Is it too late to start a business at 55?</h3>
+                    <p class="question-preview">"I've always dreamed of opening my own consulting business, but I'm worried I'm too old to compete with younger entrepreneurs..."</p>
+                    <div class="grace-response">
+                        <h4>Grace's Response:</h4>
+                        <p>Absolutely not! Age is actually an advantage in business. You have decades of experience, established networks, and the wisdom to avoid common pitfalls...</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Read Full Response</a>
+                </div>
+
+                <div class="qa-card fade-in">
+                    <div class="question-category">Health & Wellness</div>
+                    <h3>Q: How do I find motivation to exercise when I'm always tired?</h3>
+                    <p class="question-preview">"I know exercise is important, especially at my age, but I'm exhausted most days. How do I break this cycle without feeling worse?"</p>
+                    <div class="grace-response">
+                        <h4>Grace's Response:</h4>
+                        <p>The fatigue-exercise cycle is real, but the key is starting so small that it doesn't feel overwhelming. Even 5 minutes of movement can begin to shift your energy...</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Read Full Response</a>
+                </div>
+
+                <div class="qa-card fade-in">
+                    <div class="question-category">Lifestyle & Personal Growth</div>
+                    <h3>Q: How do I make new friends after 50?</h3>
+                    <p class="question-preview">"After my divorce, I realized most of my friends were really 'couple friends.' How do I build genuine friendships at this stage of life?"</p>
+                    <div class="grace-response">
+                        <h4>Grace's Response:</h4>
+                        <p>Making friends after 50 requires intentionality, but it's absolutely possible. The key is finding activities where you'll naturally encounter like-minded people...</p>
+                    </div>
+                    <a href="#" class="btn btn-outline">Read Full Response</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grace's Promise -->
+    <section class="grace-promise">
+        <div class="container">
+            <div class="promise-content">
+                <div class="promise-image fade-in">
+                    <img src="https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&fit=crop" alt="Grace">
+                </div>
+                <div class="promise-text fade-in">
+                    <h2>My Promise to You</h2>
+                    <p class="large-text">Every question you submit receives my personal attention and thoughtful consideration.</p>
+                    <div class="promise-points">
+                        <div class="promise-point">
+                            <h3>🤝 No Judgment</h3>
+                            <p>Whatever you're going through, there's no shame in asking for guidance. We've all been there.</p>
+                        </div>
+                        <div class="promise-point">
+                            <h3>🔒 Complete Privacy</h3>
+                            <p>Your personal information stays private. Anonymous questions are never traced back to you.</p>
+                        </div>
+                        <div class="promise-point">
+                            <h3>💝 Thoughtful Responses</h3>
+                            <p>I take time to craft responses that address your specific situation with care and practical wisdom.</p>
+                        </div>
+                        <div class="promise-point">
+                            <h3>🌟 Real Experience</h3>
+                            <p>My advice comes from lived experience, not textbook theories. I've navigated many of these challenges myself.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3>How quickly will I get a response?</h3>
+                    <p>Most questions receive a response within 3-5 business days. If you've requested a private email response, you'll hear from me personally. Public responses are shared in our weekly Q&A roundup.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>Will my question be published?</h3>
+                    <p>Only if you give permission! When you submit a question, you can choose whether you're comfortable with it being shared anonymously in a blog post or video response.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>Can I ask follow-up questions?</h3>
+                    <p>Absolutely! If you need clarification or have additional questions after receiving a response, feel free to submit again. Building understanding sometimes takes more than one conversation.</p>
+                </div>
+                <div class="faq-item fade-in">
+                    <h3>What topics can I ask about?</h3>
+                    <p>Anything that's weighing on your mind! Career changes, relationships, health concerns, family dynamics, financial worries, personal growth, technology questions—I'm here for all of it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (Hidden by default) -->
+    <div class="success-message" id="successMessage">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h3>Thank You!</h3>
+            <p>Your question has been submitted successfully. I'll review it thoughtfully and respond soon.</p>
+            <button class="btn btn-outline" onclick="closeSuccessMessage()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grace After 50</h3>
+                    <p>Empowering women to embrace their wisdom, wellness, and wonderful years ahead.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="grace-tv.html">Grace TV</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="ai-tech.html">AI & Tech</a></li>
+                        <li><a href="ask-grace.html">Ask Grace</a></li>
+                        <li><a href="trending.html">Trending</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grace After 50. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

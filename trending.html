@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace in the News - Grace After 50</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1 class="logo">Grace After 50</h1>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="grace-tv.html" class="nav-link">Grace TV</a></li>
+                    <li><a href="wellness.html" class="nav-link">Wellness</a></li>
+                    <li><a href="ai-tech.html" class="nav-link">AI & Tech</a></li>
+                    <li><a href="ask-grace.html" class="nav-link">Ask Grace</a></li>
+                    <li><a href="trending.html" class="nav-link active">Trending</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+    <a href="https://facebook.com/yourgroup" class="btn btn-outline" target="_blank" rel="noopener" aria-label="Join Facebook Community">Join Community</a>
+
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Grace in the News</h1>
+            <p class="page-subtitle">Inspiring stories and trending topics for women 50+</p>
+        </div>
+    </section>
+
+    <!-- Featured Story -->
+    <section class="featured-story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-image fade-in">
+                    <img src="https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" alt="Featured Story">
+                </div>
+                <div class="story-text fade-in">
+                    <span class="story-badge">Featured Story</span>
+                    <h2>The 65-Year-Old Entrepreneur Who's Revolutionizing Tech</h2>
+                    <p class="story-excerpt">Meet Sarah Chen, who left her corporate job at 62 to start an AI company focused on solving problems for older adults. Three years later, her startup has raised $15 million and is changing how we think about aging and technology.</p>
+                    <div class="story-meta">
+                        <span>Technology</span> • <span>5 min read</span> • <span>Today</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">Read Full Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Categories -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All Stories</button>
+                <button class="category-btn" data-category="inspiring">Inspiring Women</button>
+                <button class="category-btn" data-category="health">Health & Wellness</button>
+                <button class="category-btn" data-category="technology">Technology</button>
+                <button class="category-btn" data-category="lifestyle">Lifestyle</button>
+                <button class="category-btn" data-category="finance">Money & Retirement</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-grid-section">
+        <div class="container">
+            <div class="news-grid">
+                <!-- News Story 1 -->
+                <article class="news-card fade-in" data-category="inspiring">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/4474047/pexels-photo-4474047.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Fashion CEO">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Inspiring Women</span>
+                            <span class="news-date">2 days ago</span>
+                        </div>
+                        <h3>Fashion CEO Proves Age is Just a Number in Leadership</h3>
+                        <p>At 58, Maria Rodriguez became CEO of a major fashion brand and increased profits by 40% while championing age-inclusive marketing.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 2 -->
+                <article class="news-card fade-in" data-category="health">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/3823495/pexels-photo-3823495.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Health Research">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Health & Wellness</span>
+                            <span class="news-date">3 days ago</span>
+                        </div>
+                        <h3>New Study: Strength Training After 50 Reverses Aging at Cellular Level</h3>
+                        <p>Groundbreaking research shows that women who start weight training after 50 can reverse muscle aging and improve longevity markers.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 3 -->
+                <article class="news-card fade-in" data-category="technology">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Technology">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Technology</span>
+                            <span class="news-date">4 days ago</span>
+                        </div>
+                        <h3>AI App Designed by 60+ Women Wins Tech Innovation Award</h3>
+                        <p>A team of women over 60 created an AI-powered app to help seniors manage medications, and it just won the Healthcare Innovation Award.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 4 -->
+                <article class="news-card fade-in" data-category="lifestyle">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/7688461/pexels-photo-7688461.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Travel">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Lifestyle</span>
+                            <span class="news-date">5 days ago</span>
+                        </div>
+                        <h3>Solo Travel Surge: Women 50+ Leading Adventure Tourism Growth</h3>
+                        <p>Tourism data shows women over 50 are the fastest-growing segment in adventure and solo travel, redefining retirement adventures.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 5 -->
+                <article class="news-card fade-in" data-category="finance">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Financial Planning">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Money & Retirement</span>
+                            <span class="news-date">1 week ago</span>
+                        </div>
+                        <h3>Women 50+ Control $15 Trillion in Wealth, Study Finds</h3>
+                        <p>New research reveals that women over 50 control the majority of household wealth in America, reshaping financial services strategies.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 6 -->
+                <article class="news-card fade-in" data-category="inspiring">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Author">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Inspiring Women</span>
+                            <span class="news-date">1 week ago</span>
+                        </div>
+                        <h3>Debut Novelist at 67 Tops Bestseller Lists</h3>
+                        <p>Margaret Phillips published her first novel at 67 and it's now #1 on the New York Times bestseller list, proving it's never too late to chase dreams.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 7 -->
+                <article class="news-card fade-in" data-category="health">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Sleep Health">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Health & Wellness</span>
+                            <span class="news-date">1 week ago</span>
+                        </div>
+                        <h3>Sleep Quality Improves Dramatically After Menopause, Researchers Find</h3>
+                        <p>Contrary to popular belief, new research shows that sleep quality can actually improve significantly in the years following menopause.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 8 -->
+                <article class="news-card fade-in" data-category="technology">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Social Media">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Technology</span>
+                            <span class="news-date">2 weeks ago</span>
+                        </div>
+                        <h3>Grandmothers on TikTok: The Unexpected Social Media Stars</h3>
+                        <p>Women over 60 are becoming viral sensations on TikTok, sharing wisdom, recipes, and life advice to millions of followers.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- News Story 9 -->
+                <article class="news-card fade-in" data-category="lifestyle">
+                    <div class="news-image">
+                        <img src="https://images.pexels.com/photos/3985357/pexels-photo-3985357.jpeg?auto=compress&cs=tinysrgb&w=400&h=250&fit=crop" alt="Beauty">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-category">Lifestyle</span>
+                            <span class="news-date">2 weeks ago</span>
+                        </div>
+                        <h3>Beauty Brands Finally Embrace Models Over 50</h3>
+                        <p>Major cosmetics companies are featuring mature models in campaigns, celebrating beauty at every age and driving record sales.</p>
+                        <a href="#" class="news-link">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Wisdom Roundup -->
+    <section class="weekly-roundup">
+        <div class="container">
+            <div class="roundup-content">
+                <div class="roundup-text fade-in">
+                    <h2>Weekly Wisdom Round-Up</h2>
+                    <p class="large-text">Get the most inspiring stories, trending topics, and uplifting news about women 50+ delivered to your inbox every Sunday.</p>
+                    <div class="roundup-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📰</span>
+                            <p>Curated stories that matter to you</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💪</span>
+                            <p>Inspiring profiles of amazing women</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📈</span>
+                            <p>Trending topics and important updates</p>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎯</span>
+                            <p>No fluff—just the stories you care about</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="roundup-form fade-in">
+                    <div class="form-container">
+                        <h3>Subscribe to Weekly Round-Up</h3>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                        <p class="form-note">Join 15,000+ women staying informed and inspired.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Spotlight -->
+    <section class="community-spotlight">
+        <div class="container">
+            <h2 class="section-title">Community Spotlight</h2>
+            <div class="spotlight-grid">
+                <div class="spotlight-card fade-in">
+                    <div class="spotlight-content">
+                        <h3>Member Achievement</h3>
+                        <p>"After reading Grace's tech guides, I finally started my online business selling handmade jewelry. Three months in, I'm already profitable!" - Janet, 56</p>
+                    </div>
+                </div>
+                <div class="spotlight-card fade-in">
+                    <div class="spotlight-content">
+                        <h3>Success Story</h3>
+                        <p>"The wellness tips helped me lose 30 pounds and feel more energetic than I have in years. Age really is just a number!" - Carmen, 62</p>
+                    </div>
+                </div>
+                <div class="spotlight-card fade-in">
+                    <div class="spotlight-content">
+                        <h3>Community Love</h3>
+                        <p>"This community has become my lifeline. The support and encouragement from other women has transformed my confidence." - Linda, 59</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Grace After 50</h3>
+                    <p>Empowering women to embrace their wisdom, wellness, and wonderful years ahead.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">Pinterest</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="grace-tv.html">Grace TV</a></li>
+                        <li><a href="wellness.html">Wellness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="ai-tech.html">AI & Tech</a></li>
+                        <li><a href="ask-grace.html">Ask Grace</a></li>
+                        <li><a href="trending.html">Trending</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grace After 50. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
